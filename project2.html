@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feel-free-to-eat.com</title>
+    <link rel="stylesheet" href="./preoject2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        @media screen and (max-width:1230px) {
+
+            #services {
+                flex-direction: column;
+            }
+
+            #services .box {
+                padding: 15px 5px;
+                margin: 10px 0px;
+                /* width: 252px; */
+            }
+
+            #services .box img {
+                width: 80%;
+            }
+
+            .services-container h1 {
+                margin-top: 35px;
+            }
+
+            #navbar {
+                flex-direction: column;
+                height: 135%;
+            }
+
+            #navbar ul li a {
+                font-size: 1rem;
+                padding: 0px 10px;
+            }
+
+            #logo {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 80px;
+            }
+
+            #logo img {
+                width: 30%;
+                margin-bottom: 11px;
+
+            }
+
+            #home {
+                height: 300px;
+                padding: 4px 80px;
+            }
+
+            #home::before {
+                height: 400px;
+            }
+
+            #home p {
+                font-size: 10px;
+            }
+
+            #home .h-primary {
+                font-size: 25px;
+            }
+
+            #home .btn {
+                padding: 4px 4px;
+                font-size: 14px;
+            }
+
+            #client-section {
+                height: 330px;
+            }
+
+            #clients {
+                flex-wrap: wrap;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./images/images.png" alt="feel free to eat">
+
+
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to the site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit sunt voluptatem el.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+
+        <h1 class="h-primary">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="./images/pexels-lisa-fotios-1161547.jpg" alt="">
+                <h2 class="h-secondary center">Food ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cum praesentium
+                    voluptates similique, quia dolores a, tenetur, unde minus beatae accusantium. Eligendi ipsum et
+                    temporibus!</p>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/1287186696/photo/food-delivery-app-order-with-phone-online-mobile-service-for-take-away-burger-and-pizza.jpg?b=1&s=170667a&w=0&k=20&c=rpyHqkxeuH5P4xdFFcvE-bjet3GMdGo7qwUoswFwlXU="
+                    alt="">
+                <h2 class="h-secondary center">online delivery</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cum praesentium
+                    voluptates similique, quia dolores a, tenetur, unde minus beatae accusantium. Eligendi ipsum et
+                    temporibus!</p>
+            </div>
+            <div class="box">
+                <img src="./images/pexels-lumn-1028599.jpg" alt="">
+                <h2 class="h-secondary center">dedication</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cum praesentium
+                    voluptates similique, quia dolores a, tenetur, unde minus beatae accusantium. Eligendi ipsum et
+                    temporibus!</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">
+            Our Clients
+        </h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://cdn3d.iconscout.com/3d/free/thumb/apple-logo-4059223-3364075@0.png" alt="our client">
+            </div>
+
+            <div class="client-item">
+                <img src="./images/download (1).png" alt="our client">
+            </div>
+            <div class="client-item">
+                <img src="./images/download (2).jfif" alt="our client">
+            </div>
+            <div class="client-item">
+                <img src="./images/img4.jfif" alt="our client">
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <div><label for="name">Name</label></div>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <div> <label for="email">Email</label></div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <div><label for="age">Age</label></div>
+                    <input type="number" name="age" id="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <div><label for="address">Address</Address></label></div>
+                    <input type="text" name="address" id="address" placeholder="Enter your address">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyrights &copy; www.feel-free-to-eat.com .All rights resereved.
+        </div>
+    </footer>
+</body>
+
+</html>
